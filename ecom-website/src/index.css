@@ -1,13 +1,78 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* set document font size */
+  /* font-size: calc(18px + (18 - 22.4) * ((100vw - 450px) / (1200 - 450))); */
+  /* line-height: 1.125rem; */
+}
+h1{
+  /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+  font-size: calc(54.88px + (68.6 - 54.88) * ((100vw - 450px) / (1200 - 450)));
+  line-height: 1em;
+  margin-top: 0rem;
+  margin-bottom: 0.5em;
+}
+h2{
+  font-size: calc(43.84px + (54.88 - 43.84) * ((100vw - 450px) / (1200 - 450)));
+  line-height: 1em;
+  margin-top: 0rem;
+  margin-bottom: 0.5em;
+}
+h3{
+  font-size: calc(35.04px + (43.84 - 35.04) * ((100vw - 450px) / (1200 - 450)));
+  line-height: 1em;
+  margin-top: 0rem;
+  margin-bottom: 0.5em;
+}
+h4{
+  font-size: calc(28px + (35.04 - 28) * ((100vw - 450px) / (1200 - 450)));
+  line-height: 1em;
+  margin-top: 0rem;
+  margin-bottom: 0.5em;
+}
+h5{
+  font-size: calc(22.4px + (28 - 22.4) * ((100vw - 450px) / (1200 - 450)));
+  line-height: 1em;
+  margin-top: 0rem;
+  margin-bottom: 0.5em;
+}
+h6{
+  font-size: calc(18px + (22.4 - 18) * ((100vw - 450px) / (1200 - 450)));
+  line-height: 1.5rem;
+  margin-top: 0rem;
+  margin-bottom: 0.5em;
+}
+p{
+  font-size: calc(17px + (18 - 17) * ((100vw - 450px) / (1200 - 450)));
+  line-height: 1.5em;
+}
+@media only screen and (min-width: 1200px) {
+  h1{font-size: 4.288rem;}
+  h2{font-size: 3.43rem;}
+  h3{font-size: 2.74rem;}
+  h4{font-size: 2.19rem;}
+  h5{font-size: 1.75rem;}
+  h6{font-size: 1.4rem;}
+  p{font-size: 1.125rem;}
+}
+@media only screen and (max-width: 450px) {
+  h1{font-size: 3.43rem;}
+  h2{font-size: 2.74rem;}
+  h3{font-size: 2.19rem;}
+  h4{font-size: 1.75rem;}
+  h5{font-size: 1.4rem;}
+  h6{font-size: 1.125rem;}
+  p{font-size: 1.063rem;}
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a{
+  text-decoration: underline;
+  color: aquamarine;
+}
+a:hover, a:focus{
+  cursor: pointer;
+  text-decoration: underline;
+  color: aquamarine;
 }
