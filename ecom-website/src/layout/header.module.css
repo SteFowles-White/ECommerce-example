@@ -1,0 +1,14 @@
+.header {
+    height: 5rem;
+}
+.nav__link{
+    font-size: calc(18px + (22.4 - 18) * ((100vw - 480px) / (1200 - 480)));
+    line-height: 1.5rem;
+}
+
+@media only screen and (min-width: 1200px) {
+    .nav__link{font-size: 1.75rem;}
+  }
+  @media only screen and (max-width: 480px) {
+    .nav__link{font-size: 1.4rem;}
+  }
