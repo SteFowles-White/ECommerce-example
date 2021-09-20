@@ -97,3 +97,8 @@ test('renders the Home Page by ID', () => {
     // check that the content changed to the new page
     expect(screen.getByTestId('home-router-page')).toBeInTheDocument()
 })
+
+test('Font awesome icon rendors', () => {
+    render(<App />);
+    expect(screen.getByTestId('log-in')).toBeInTheDocument()
+})

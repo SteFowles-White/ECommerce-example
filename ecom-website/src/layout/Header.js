@@ -1,8 +1,18 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import styles from './header.module.css'
+import styles from './header.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
+
+
+
 
 const Header = () => {
+
+    const logInHandler = () => {
+        console.log('log in')
+    }
+
     return (
         <header className='container-fluid'>
             <nav className={`row flex-direction-row flex header ${styles.header}`}>
@@ -15,8 +25,10 @@ const Header = () => {
                     <li className={`p-1 ${styles.nav__link}`}><NavLink to='womens'>Womens</NavLink></li>
                     <li className={`p-1 ${styles.nav__link}`}><NavLink data-testid="basket-router-link" to='basket'>Basket</NavLink></li>
                 </ul>
-                <div className='col-xs-3 flex justify-content-center align-items-aligncenter'>
-                    test text
+                <div className='col-xs-3 flex justify-content-flexend align-items-aligncenter'>
+                    <button type="button" aria-label="login in" onClick={ logInHandler }>
+                        <FontAwesomeIcon data-testid="log-in" icon={faUserCircle}/>
+                    </button>
                 </div>
             </nav>
         </header>
