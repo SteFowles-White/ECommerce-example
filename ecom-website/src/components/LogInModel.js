@@ -4,7 +4,7 @@ import  ReactDOM  from 'react-dom';
 const LogInModel = () => {
     return (
         <div>
-            <section>
+            <section data-testid="login-model">
                 <form>
                     <div>
                         <label>Some text

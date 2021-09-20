@@ -1,14 +1,15 @@
 import React from 'react';
+import { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import RenderLogInModel from './components/LogInModel'
 
 ReactDOM.render(
+
+
   <React.StrictMode>
     <App />
-    <RenderLogInModel/>
   </React.StrictMode>,
   document.getElementById('root')
 );

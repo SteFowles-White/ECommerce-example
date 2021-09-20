@@ -7,10 +7,10 @@ import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 
 
 
-const Header = () => {
+const Header = props => {
 
     const logInHandler = () => {
-        console.log('log in')
+        props.loginModel(true)
     }
 
     return (

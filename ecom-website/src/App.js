@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import Header from './layout/Header';
 import {
     BrowserRouter as Router,
@@ -9,13 +10,15 @@ import Home from './pages/Home';
 import Men from './pages/Mens';
 import Women from './pages/Womens';
 import Basket from './pages/Basket';
+import RenderLogInModel from './components/LogInModel'
 
 const App = () => {
+    const [logIn, setLogIn] = useState(false);
 
     return(
         <React.Fragment>
             <Router>
-                <Header/>
+                <Header loginModel={setLogIn}/>
                 <Route path='/' exact>
                     <Home/>
                 </Route>
@@ -29,6 +32,7 @@ const App = () => {
                     <Basket/>
                 </Route>
             </Router>
+            {logIn === true && <RenderLogInModel/> }
         </React.Fragment>
     )
 }
