@@ -1,0 +1,42 @@
+.overlay{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    background: rgba(0,0, 0, .7);
+}
+
+.login__form {
+    background: white;
+    border-radius: 1rem;
+}
+
+.login__form__fieldset{
+    border: 0px;
+}
+.login__form__legend{
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .login__form{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .login__form{
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .login__form{
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .login__form{
+        width: 30%;
+    }
+}
