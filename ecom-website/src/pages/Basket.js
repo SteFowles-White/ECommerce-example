@@ -2,7 +2,10 @@ import React from 'react';
 
 const Basket = () => {
     return(
-        <p>Hello Basket</p>
+        <main data-testid="basket-router-page">
+            <p>Hello Basket</p>
+        </main>
+       
     )
 }
 

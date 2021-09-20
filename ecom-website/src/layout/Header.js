@@ -13,7 +13,7 @@ const Header = () => {
                     <li className={`p-1 ${styles.nav__link}`}><NavLink to='/'>Home</NavLink></li>
                     <li className={`p-1 ${styles.nav__link}`}><NavLink to='/mens'>Mens</NavLink></li>
                     <li className={`p-1 ${styles.nav__link}`}><NavLink to='womens'>Womens</NavLink></li>
-                    <li className={`p-1 ${styles.nav__link}`}><NavLink to='basket'>Basket</NavLink></li>
+                    <li className={`p-1 ${styles.nav__link}`}><NavLink data-testid="basket-router-link" to='basket'>Basket</NavLink></li>
                 </ul>
                 <div className='col-xs-3 flex justify-content-center align-items-aligncenter'>
                     test text

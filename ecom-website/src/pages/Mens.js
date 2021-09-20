@@ -1,8 +1,11 @@
 import React from 'react';
+import { render } from 'react-dom';
 
 const Men = () => {
     return(
-        <p>Hello Men</p>
+        <main data-testid="mens-router-page">
+            <p>Hello Men</p>
+        </main>
     )
 }
 
